@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Patient Appointment Management</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+		<!-- *** Load jQueryUI default CSS from Google CDN. *** -->
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+		<script src="script/index.js"></script>
+		<link rel="stylesheet" href="css/appointment.css">
+	</head>
+	
+	<body>
+		<div id="patientmain">
+			<header>
+				<h1>Patient Appointment Management</h1>
+			</header>
+		<section>
+			<center> <h3> Make/View/Edit Appoinment below.</h3> </center>
+			<img src="clinic2.gif" alt="Ugr Medical Centre" height="80" width="120"></img>
+			<center>
+				<table>
+					<tr>
+						<td>Patient Name:</td>
+						<td><input type = "text" id ="patientname" title="The name of the patient"></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button id="showAppointment" title="Click to show appointment(s).">Show Appointment(s)</button>
+							<button id="makeAppointment" title="Click to make an appointment.">Make an Appointment</button>
+						</td>
+					</tr>
+				</table>
+			</center>
+			<ul id="myappointments"></ul>
+		</section>
+		<section id="AddappointmentDetails">
+			<section>
+				<table>
+					<tr>
+						<td><b>GP:</b></td>
+						<td><select id="gp"></select></td>
+					</tr>
+					<tr>
+						<td><b>Date:</b></td>
+						<td><input type="text" id="datepicker"></td>
+					</tr>
+					<tr>
+						<td><b>Time:</b></td>
+						<td>
+							<select id="hour_selector"></select> :
+							<select id="minute_selector"></select>
+						</td>
+					</tr>
+				</table>
+			</section>
+			<!-- Buttons for saving/cancelling. -->
+			<section id="putButtons">
+				<button id="saveAppointment">Save</button>
+				<button id="cancelAppointment">Cancel</button>
+				<button id="deleteAppointment">Delete</button>
+			</section>
+			<section>
+			 <input type="hidden" id="myid"> 
+			</section>
+		</section>
+		<footer>
+			Click <a href = "help.html">here</a> for help on how to use the UGR Appointment Manager</br>
+			Copyright © Babaagba_Kehinde
+		</footer>
+	</div>
+</body>
+</html>

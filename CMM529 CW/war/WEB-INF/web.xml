@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>CMM529_CW</servlet-name>
+		<servlet-class>cmm529.cw.Cmm529_CWServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CMM529_CW</servlet-name>
+		<url-pattern>/cmm529_cw</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>EDITAPPOINTMENT</servlet-name>
+		<servlet-class>cmm529.cw.EditAppointmmentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EDITAPPOINTMENT</servlet-name>
+		<url-pattern>/editappointment/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>EDITGPAPPOINTMENT</servlet-name>
+		<servlet-class>cmm529.cw.EditGPAppointmentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EDITGPAPPOINTMENT</servlet-name>
+		<url-pattern>/editgpappointment/*</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

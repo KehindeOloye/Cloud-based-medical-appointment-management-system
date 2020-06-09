@@ -1,0 +1,11 @@
+<!-- Indices written at Sun, 1 May 2016 10:29:45 BST -->
+
+<datastore-indexes>
+
+    <!-- Used 9 times in query history -->
+    <datastore-index kind="Appointment" ancestor="false" source="auto">
+        <property name="gpName" direction="asc"/>
+        <property name="dateTime" direction="asc"/>
+    </datastore-index>
+
+</datastore-indexes>
