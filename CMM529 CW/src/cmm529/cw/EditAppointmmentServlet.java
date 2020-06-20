@@ -19,7 +19,7 @@ public class EditAppointmmentServlet extends HttpServlet{
 	// It creates if there is none, or reuse if there is already one.
 	public EntityManager getManager()
 	{
-		if (manager!=null)	//there is one already
+		if (manager!=null)	// if there is one already
 			return manager;	//just return it
 			//if there is none, create, store it, and return
 			EntityManagerFactory factory=Persistence.createEntityManagerFactory("transactions-optional");
